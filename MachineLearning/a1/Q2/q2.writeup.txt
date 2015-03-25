@@ -1,0 +1,10 @@
+a) co-efficients 
+theta0: -2.6205
+theta1: 0.76037
+theta2: 1.1719
+
+Logistic regression:
+Incorporated the intercept term.
+Implemented Newtons method for finding zeros of gradient of cost function.
+For calculation of Hessian, did transpose of input feature data and multiplied it with a diagonal matrix with weights equal to derivative of sigmoid function which is again multiplied by the input feature matrix.
+Converging condition: We wanted to find the zeros of gradient of cost so converging condition is the absolute value of gradient of cost function is as close to zero as possible 1e-6. 

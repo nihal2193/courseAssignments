@@ -1,0 +1,47 @@
+a)
+mean0: 98.3800000000000
+		429.660000000000
+
+mean1: 137.460000000000
+		366.620000000000
+
+sigma: 287.482000000000	-26.7480000000000
+		-26.7480000000000	1123.25000000000
+
+
+d)
+sigma0:
+255.395600000000	-184.330800000000
+-184.330800000000	1371.10440000000
+
+
+sigma1:
+319.568400000000	130.834800000000
+130.834800000000	875.395600000000
+
+
+In GDA:
+Linear:
+The linear boundary is characterised as when the probability of x lying in 0 or 1 region is both equal and sigma0 = sigma1 = sigma
+i.e. the variance of both the classess are same.
+This gives us the resulting equation as:
+=>	(X - mean1)'*inv(sigma)*(X - mean1) = (X - mean0)'*inv(sigma)*(X - mean0)
+=>	 X'*(inv(sigma))*X - mean1'*(inv(sigma))*X - X'*(inv(sigma))*mean1 + mean1'*(inv(sigma))*(mean1) = X'*(inv(sigma))*X - mean0'*(inv(sigma))*X - X'*(inv(sigma))*mean0 + mean0'*(inv(sigma))*(mean0) 
+=>	- mean1'*(inv(sigma))*X - X'*(inv(sigma))*mean1 + mean1'*(inv(sigma))*(mean1) = - mean0'*(inv(sigma))*X - X'*(inv(sigma))*mean0 + mean0'*(inv(sigma))*(mean0) 
+
+which is a linear equation in X=[x1;x2]
+where x1 and x2 are two features given in the question.
+
+Linear Boundary:
+The boundary separates two cases of Alaska and Canada but there are some points which are wrongly interpreted by the linear classifier.
+
+Quadratic:
+The quadratic boundary is characterised as when the probability of x lying in 0 or 1 region is both equal.
+This gives us the resulting equation as:
+(X - mean1)'*inv(sigma1)*(X - mean1) = (X - mean0)'*inv(sigma0)*(X - mean0)  
+This equation contains the quadratic term X'*(inv(sigma1))*X - X'*(inv(sigma0))*(X) where sigma0 and sigma1 are different 2X2 matrices in the given case.
+
+
+Quadratic Boundary:
+The boundary separates two cases of Alaska and Canada and this calssifier is more accurate than the linear.
+It tries to fit a quadratic curve to separate the data which results in a much better separator than the linear one.

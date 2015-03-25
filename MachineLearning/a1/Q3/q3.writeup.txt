@@ -1,0 +1,10 @@
+In this example I have generated 100 points linearly spaced between
+minimum and maximum of the given data points.
+For very large values of tau locally weighted regression is like 
+fitting a straight line for the given data points. Because the weights assigned to each points are going to be zero.
+For very small values of tau it is trying to fit every data point
+some times trying to fit the noisy values also. In this case it is giving very high weights to the points very nearby and suddenly drops to zero for other points.
+For tau in between very large like 10 or 100 and 0.1 say(0.7 , 0.8) it gives a smooth curve as the weights are distributed like a gaussian function which gives weights to nearby points in such a way that it gives a smooth curve. It tries to fit the curve smoothly.
+
+Weighted Linear Regression:
+There is a W term after each X' term in the original normal form.

@@ -1,0 +1,89 @@
+Linear Regression
+
+a)
+stopping criterion: gradient of cost function is as close to zero as possible in my case it is 1e-6.
+final set of parameters:
+theta0 : '5.8391
+theta1 : '4.6169
+
+b)
+plot data and hypothesis function
+
+c)
+3d mesh
+
+d)
+contours of error function
+
+e)
+learning rate
+n = 0.1
+Learning rate? 0.1
+no of iterations: '127
+theta0 : '5.8391
+theta1 : '4.6169
+
+j_theta_min =
+
+    4.4770
+
+n = 0.5
+Learning rate? 0.5
+no of iterations: '22
+theta0 : '5.8391
+theta1 : '4.6169
+
+j_theta_min =
+
+    4.4770
+
+
+n = 0.9
+Learning rate? 0.9
+no of iterations: '7
+theta0 : '5.8391
+theta1 : '4.6169
+
+j_theta_min =
+
+    4.4770
+
+
+n = 1.3
+Learning rate? 1.3
+no of iterations: '14
+theta0 : '5.8391
+theta1 : '4.6169
+
+j_theta_min =
+
+    4.4770
+
+
+n = 2.1
+Learning rate? 2.1
+no of iterations: '7382
+theta0 : 'NaN
+theta1 : 'NaN
+
+j_theta_min =
+
+     0
+
+
+n = 2.5
+Learning rate? 2.5
+no of iterations: '1736
+theta0 : 'NaN
+theta1 : 'NaN
+
+j_theta_min =
+
+     0
+
+Since the data given contains only one feature i.e x1, an intercept term is
+added to the data. Thus the parameters of hypothesis function i.e theta values are taken to be 1X2 row vector and initialised with [0,0].
+The cost function is calculated on the initial value of thetas.
+Now until convergence the values of thetas are updated to get the minima of cost function.
+Drawn 3d mesh for the cost function and shown the values of thetas while it converges to the minima.
+Drawn the contours for the cost function and shown how the values cost function converges to local minima.
